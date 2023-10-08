@@ -1,0 +1,15 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chats"
+        android:icon="@drawable/ic_chats"
+        android:title="Chats" />
+    <item
+        android:id="@+id/nav_status"
+        android:icon="@drawable/ic_status"
+        android:title="Status" />
+    <item
+        android:id="@+id/nav_calls"
+        android:icon="@drawable/ic_calls"
+        android:title="Calls" />
+</menu>
