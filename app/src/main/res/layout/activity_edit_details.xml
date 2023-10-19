@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:context=".Firebase.EditDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Edit Details Here"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/updateUsernameEditText"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_width="250dp"
+        android:hint="Username Here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/intermedium"
+        app:layout_constraintEnd_toEndOf="@+id/enterEmailEditText"
+        app:layout_constraintStart_toStartOf="@+id/enterEmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmailEditText" />
+
+    <EditText
+        android:id="@+id/updatePhoneNumberEditText"
+        android:layout_width="250dp"
+        android:hint="Phone Number Here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/intermedium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/updateUsernameEditText"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/updateUsernameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/updateUsernameEditText" />
+
+    <ImageView
+        android:id="@+id/updateProfileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/updatePhoneNumberEditText"
+        app:layout_constraintStart_toStartOf="@+id/updatePhoneNumberEditText"
+        app:layout_constraintTop_toBottomOf="@+id/updatePhoneNumberEditText" />
+
+    <TextView
+        android:id="@+id/enterEmailEditText"
+        android:layout_width="250dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gontserratbold"
+        android:layout_marginTop="24dp"
+        android:hint="EMAIL"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/updateProfileImageView"
+        app:layout_constraintStart_toStartOf="@+id/updateProfileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/updateProfileImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

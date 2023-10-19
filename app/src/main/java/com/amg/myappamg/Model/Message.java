@@ -1,11 +1,5 @@
 package com.amg.myappamg.Model;
 
-/**
- * @Author: AMG
- * @Date: Wednesday 18/10/2023 October 2023
- * @Time: 02:31
- */
-
 public class Message {
     private String userID, text;
     private long timestamp;

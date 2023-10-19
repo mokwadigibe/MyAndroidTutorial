@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firebase.AddDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Add Details Here"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterEmailEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/intermedium"
+        android:hint="Email Here"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/addProfileImageView"
+        app:layout_constraintStart_toStartOf="@+id/addProfileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/addProfileImageView" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_width="250dp"
+        android:hint="Username Here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/intermedium"
+        app:layout_constraintEnd_toEndOf="@+id/enterEmailEditText"
+        app:layout_constraintStart_toStartOf="@+id/enterEmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmailEditText" />
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="250dp"
+        android:hint="Phone Number Here"
+        android:textColor="@color/black"
+        android:fontFamily="@font/intermedium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/usernameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+    <ImageView
+        android:id="@+id/addProfileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Add"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberEditText"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="80dp"
+        android:text="View"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberEditText"
+
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
